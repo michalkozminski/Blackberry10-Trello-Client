@@ -1,0 +1,29 @@
+<div data-bb-type="screen" data-bb-effect="slide-up" data-bb-scroll-effect="off" id="organizations">
+	<div data-bb-type="title" data-bb-caption="Card" id="titleBar"></div>
+	<script  src="javascript/card.js"></script>
+    <div data-bb-type="round-panel"> 
+        <div data-bb-type="panel-header">Description</div>
+		<div id="dueDate">
+		<p style="text-align:center;" id="cardDescription"></p>
+		<p>Labels:</p>
+		<p id="labels"></p>
+		<p>Assigned Users</p>
+		<p id="assignedUsers"></p>
+    </div>
+	<div id="commentsPanel">
+      <div data-bb-type="round-panel"> 
+          <div data-bb-type="panel-header">Add coment</div>
+          <div data-bb-type="label-control-container">
+            <div data-bb-type="row">
+                <div data-bb-type="label">Your comment:</div>
+                <input id="commentText" type="text" placeholder="Write here" id="cardDescription"/>
+            </div>
+			  <div data-bb-type="button" onclick="addComment();">Add</div>
+          </div>		
+
+      </div>
+	</div>
+	<div data-bb-type="action-bar" data-bb-back-caption="Back">
+		<div id="checklistsTab" data-bb-type="action" data-bb-style="button" data-bb-img="images/checklists_icon.png" onclick="bb.pushScreen('card_checklists.html', 'notifications');">Checklists</div>
+	</div>
+</div>

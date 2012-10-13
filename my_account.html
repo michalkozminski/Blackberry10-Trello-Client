@@ -1,0 +1,30 @@
+<div data-bb-type="screen" data-bb-effect="fade" data-bb-scroll-effect="off">
+	<script  src="javascript/my_account.js"></script>
+	<div id="titleBar" data-bb-type="title" data-bb-caption="User Name" data-bb-accent-text="e-mail" data-bb-img=""></div>
+	
+    <div data-bb-type="round-panel"> 
+        <div data-bb-type="panel-header">Boards</div>
+        <div data-bb-type="label-control-container">
+			<p id="boardsList"></p>
+        </div>
+    </div>
+    <div data-bb-type="round-panel"> 
+        <div data-bb-type="panel-header">Organizations</div>
+        <div data-bb-type="label-control-container">
+			<p id="OrganizationsList"></p>
+        </div>
+    </div>
+    <div data-bb-type="round-panel"> 
+        <div data-bb-type="panel-header">Pending Invitaions</div>
+        <div data-bb-type="label-control-container">
+			<p id="pendingInvitations"></p>
+        </div>
+    </div>
+	
+	<div data-bb-type="action-bar">
+		<div data-bb-type="action" data-bb-style="tab" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="bb.pushScreen('org_list.html', 'organizations');">Organizations</div>
+		<div data-bb-type="action" data-bb-style="tab" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="bb.pushScreen('boards_list.html', 'boards');">Boards</div>
+		<div data-bb-type="action" data-bb-style="tab" data-bb-selected="true" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="bb.pushScreen('my_account.html', 'my_account');">My Account</div>
+		<div data-bb-type="action" data-bb-style="tab" data-bb-img="images/actionBar/cog_dark_theme.png" onclick="bb.pushScreen('notifications.html', 'notifications');">Notifications</div>
+	</div>
+</div>

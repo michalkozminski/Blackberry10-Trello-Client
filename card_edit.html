@@ -1,0 +1,31 @@
+<div data-bb-type="screen" data-bb-effect="slide-up" data-bb-scroll-effect="off" id="organizations">
+	<script  src="javascript/card_edit.js"></script>
+	<div data-bb-type="title" data-bb-back-caption="Back" data-bb-caption="Edit Card" data-bb-action-caption="Save" onactionclick="updateCard()"></div>
+    <div data-bb-type="round-panel"> 
+        <div data-bb-type="panel-header">Card</div>
+        <div data-bb-type="label-control-container">
+            <div data-bb-type="row">
+                <div data-bb-type="label">Name:</div>
+                <input type="text" value="Loading .." id="cardName"/>
+            </div>
+            <div data-bb-type="row">
+                <div data-bb-type="label">Description:</div>
+                <input type="text" value="Loading .." id="cardDescription"/>
+            </div>
+            <div data-bb-type="row">
+                <div data-bb-type="label">Move to other:</div>
+			      <select data-bb-style="stretch" id="cardList">
+			      </select>
+            </div>
+        </div>
+
+		<div id="assignedTo" data-bb-type="image-list" data-bb-style="removebuttons"></div>
+		<div data-bb-type="round-panel" style="text-align:center"> 
+			Move items from the bottom list to the top list by clicking the (-) button
+		</div>
+		<div id="boardUsers" data-bb-type="image-list" data-bb-style="addbuttons"></div>
+		
+		
+    </div>	
+	
+</div>
