@@ -28,7 +28,6 @@ var renderComment = function(commentsDiv, comment){
 	commentDiv.appendChild(commentBodyDiv);
 
 	commentsDiv.appendChild(commentDiv);
-	commentDiv.reflesh();
 }
 
 var addLabel = function(labelElement, label){
@@ -53,8 +52,9 @@ var renderCard = function(card){
 	document.getElementById("checklistsTab").setCaption("Checklists ("+card.idChecklists.length+")");
 	
 	//render labels
-	var labelElement = document.getElementById("labels");
+	var labelElement = document.getElementById("cardLabels");
 	for(id in card.labels){
+		console.log("labelElement:"+document.getElementById("cardLabels"));
 		addLabel(labelElement, card.labels[id]);
 	}
 	//render Assigned Users

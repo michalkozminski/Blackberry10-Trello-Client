@@ -1,12 +1,12 @@
 <div data-bb-type="screen" data-bb-effect="slide-up" data-bb-scroll-effect="off" id="organizations">
-	<div data-bb-type="title" data-bb-caption="Card" id="titleBar"></div>
+	<div data-bb-type="title" data-bb-caption="Card" id="titleBar" data-bb-action-caption="Edit" onactionclick="bb.pushScreen('card_edit.html', 'card_edit')"></div>
 	<script  src="javascript/card.js"></script>
     <div data-bb-type="round-panel"> 
         <div data-bb-type="panel-header">Description</div>
-		<div id="dueDate">
+		<div id="dueDate"></div>
 		<p style="text-align:center;" id="cardDescription"></p>
 		<p>Labels:</p>
-		<p id="labels"></p>
+		<div id="cardLabels"></div>
 		<p>Assigned Users</p>
 		<p id="assignedUsers"></p>
     </div>

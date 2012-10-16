@@ -14,6 +14,6 @@ Trello.get("organization/"+window.orgId+"/members", function(users){
 Trello.get("organization/"+window.orgId+"/boards", function(boards){
 	var boardsList = document.getElementById("boards");
 	for(id in boards){
-		addItemToArrayList(boardsList, boards[id].name, {onbtnclick: "window.boardId = '"+boards[id].id+"'; bb.pushScreen('board.html', 'board');"});
+		addItemToArrayList(boardsList, boards[id].name, {onclick: "window.boardId = '"+boards[id].id+"'; bb.pushScreen('board.html', 'board');"});
 	}
 }, showError);

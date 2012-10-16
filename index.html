@@ -27,9 +27,20 @@
 										}
 									}
 					});
+			var loginToTrello = function(){
+					Trello.authorize({
+					    interactive:false,
+					    success: function(){
+							bb.pushScreen('boards_list.html', 'boards_list');
+						},
+						error : function(){
+							bb.pushScreen('login.html', 'menu');
+						}
+					});    				
+			};
 		</script>
 
     </head>
-    <body onload="bb.pushScreen('login.html', 'menu');">  
+    <body onload="loginToTrello()">  
     </body>
 </html>

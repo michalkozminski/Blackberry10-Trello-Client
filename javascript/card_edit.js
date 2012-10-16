@@ -3,8 +3,8 @@ assignedUsersArray = [];
 
 // Set Description and NAme
 Trello.cards.get(window.cardId, function(card){
-	document.getElementById("cardDescription").value = card.desc;
-	document.getElementById("cardName").value = card.name;
+	document.getElementById("cardNameInput").value = card.name;
+	document.getElementById("cardDescriptionInput").value = card.desc;
 }, showError);
 
 usersAssignedToCard(window.cardId,function(users){
@@ -62,8 +62,8 @@ var updateCard = function(){
 	var cardList = document.getElementById("cardList");
 	var cardListId = cardList[cardList.selectedIndex].value
 
-	Trello.put("card/"+window.cardId+"/name", {value: document.getElementById("cardName").value});
-	Trello.put("card/"+window.cardId+"/desc", {value: document.getElementById("cardDescription").value});
+	Trello.put("card/"+window.cardId+"/name", {value: document.getElementById("cardNameInput").value});
+	Trello.put("card/"+window.cardId+"/desc", {value: document.getElementById("cardDescriptionInput").value});
 	Trello.put("card/"+window.cardId+"/idList", {value: cardListId});
 	
 	for(id in newUsers){

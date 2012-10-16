@@ -1,7 +1,14 @@
 <div data-bb-type="screen" data-bb-effect="slide-right" data-bb-scroll-effect="off" id="organizations" >
-	<div data-bb-type="title" data-bb-caption="Board" id="titleBar" data-bb-action-caption="Edit" onactionclick="bb.pushScreen('lists_edit.html','list_edit')"></div>
+	<div data-bb-type="title" data-bb-caption="Board" id="titleBar"></div>
 	<script  src="javascript/list.js"></script>
-	<div data-bb-type="image-list" data-bb-style="arrowlist" id="cardsArrowList"></div>
+	<div data-bb-type="image-list" data-bb-style="arrowlist" id="cardsArrowList" data-bb-context="true"></div>
+	<div data-bb-type="context-menu">
+      <div data-bb-type="action" data-bb-img="images/actionBar/cog_dark_theme.png">Archive</div>
+      <div data-bb-type="action" data-bb-img="images/actionBar/cog_dark_theme.png">Move</div>
+      <div data-bb-type="action" data-bb-img="images/actionBar/cog_dark_theme.png">Close</div>
+      <div data-bb-type="action" data-bb-img="images/actionBar/cog_dark_theme.png">Send it</div>
+  </div>
+  
 	<div data-bb-type="action-bar" data-bb-back-caption="Back">
 		<div data-bb-type="action" data-bb-style="button" data-bb-img="images/plus.png" onclick="bb.pushScreen('create_card.html', 'create card');">Add Card</div>
 	</div>	
